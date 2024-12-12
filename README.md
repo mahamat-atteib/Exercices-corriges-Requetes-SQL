@@ -1,6 +1,6 @@
 ![image](https://github.com/user-attachments/assets/41d7e3bd-6b7c-4336-8c93-9fd2eaffb730)
 
-**1.	Show the total population of the world.**
+**1.	Show the total population of the world.**\
 SELECT SUM(population) FROM world
 
 **2.	List all the continents - just once each.**
