@@ -20,7 +20,8 @@ FROM world\
 WHERE name in ('Estonia', 'Latvia', 'Lithuania')
 
 **6. For each continent show the continent and number of countries.**\
-SELECT continent, count(name) FROM world\ 
+SELECT continent, count(name)\ 
+FROM world\
 GROUP BY continent
 
 **7.	For each continent show the continent and number of countries with populations of at least 10 million.**\
