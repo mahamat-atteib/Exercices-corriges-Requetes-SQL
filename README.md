@@ -1,3 +1,5 @@
+Exercice 1 : Niveau basique
+
 ![image](https://github.com/user-attachments/assets/41d7e3bd-6b7c-4336-8c93-9fd2eaffb730)
 
 **1.	Show the total population of the world.**\
@@ -20,7 +22,7 @@ FROM world\
 WHERE name in ('Estonia', 'Latvia', 'Lithuania')
 
 **6. For each continent show the continent and number of countries.**\
-SELECT continent, count(name)\ 
+SELECT continent, count(name) \ 
 FROM world\
 GROUP BY continent
 
