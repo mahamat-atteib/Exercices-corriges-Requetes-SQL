@@ -5,18 +5,17 @@ Cet exercice est extrait de ce site https://sqlzoo.net/wiki/SELECT_names\. Ci-de
 ![image](https://github.com/user-attachments/assets/ad71b0fe-f9e0-464e-9fc6-c3beebd292d8)
 
 
-\
 **1.	Find the country that start with Y**\
 SELECT name\
 FROM world\
 WHERE name LIKE 'Y%'
 
-**2.	Find the countries that end with y**\
+**2.	Find the countries that end with Y**\
 SELECT name\
 FROM world\
 WHERE name LIKE '%Y'
 
-**3.	Find the countries that contain the letter x**\
+**3.	Find the countries that contain the letter X**\
 SELECT name\
 FROM world\
 WHERE name LIKE '%X%'
@@ -26,12 +25,12 @@ SELECT name\
 FROM world\
 WHERE name LIKE '%land'
 
-**5.	Find the countries that start with C and end with ia**\
+**5.	Find the countries that start with C and end with IA**\
 SELECT name\
 FROM world\
 WHERE name LIKE 'C%_%IA'
 
-**6.	Find the country that has oo in the name**\
+**6.	Find the country that has OO in the name**\
 SELECT name\
 FROM world\
 WHERE name LIKE '%oo%'
