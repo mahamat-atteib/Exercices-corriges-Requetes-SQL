@@ -1,5 +1,5 @@
-### **Exercice 1 : Niveau basique**
-
+## **Exercice 1 : Niveau basique** ##
+ 
 ![image](https://github.com/user-attachments/assets/41d7e3bd-6b7c-4336-8c93-9fd2eaffb730)
 
 **1.	Show the total population of the world.**\
