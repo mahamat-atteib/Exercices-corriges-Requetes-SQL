@@ -1,14 +1,15 @@
 ### **Exercice : Jointure avec SQL** ###
 
+Cet exercice est extrait de ce site : https://sqlzoo.net/wiki/The_JOIN_operation. 
+
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/f54466de-466f-473d-acbc-d535eb7e7ee4" alt="Description de l'image" width="600"/>
+  <img src="https://github.com/user-attachments/assets/f54466de-466f-473d-acbc-d535eb7e7ee4" alt="Description de l'image" width="700"/>
 </div>
 
-
-**Les tables avec les noms de leurs colonnes :**\
-*** game(id, mdate, stadium, team1, team2)\
-*** goal(matchid, teamid, player, gtime)\
-*** eteam(id, teamname, coach)\
+**Les 3 tables avec les noms de leurs colonnes :**
+> game : id, mdate, stadium, team1, team2\
+> goal : matchid, teamid, player, gtime\
+> eteam : id, teamname, coach\
 
 **1.	Modify it to show the matchid and player name for all goals scored by Germany. To identify German players, check for : teamid = 'GER'**
 
