@@ -3,7 +3,7 @@
 Cet exercice est extrait de ce lien : https://sqlzoo.net/wiki/SUM_and_COUNT. Ci-dessous la table "world"
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/41d7e3bd-6b7c-4336-8c93-9fd2eaffb730" alt="Description de l'image" width="200"/>
+  <img src="https://github.com/user-attachments/assets/41d7e3bd-6b7c-4336-8c93-9fd2eaffb730" alt="Description de l'image" width="400"/>
 </div>
 
 **1.	Show the total population of the world.**\
