@@ -9,8 +9,13 @@ Ci-dessous un aperçu de la table "world"
 </div>
 
 **1.	Show the total population of the world.**\
-SELECT SUM(population)\
-FROM world
+
+<div style="border: 1px solid black; padding: 10px; width: fit-content;">
+  SELECT SUM(population)
+  FROM world
+  <br>
+  500
+</div>
 
 **2.	List all the continents - just once each.**\
 SELECT DISTINCT continent\
