@@ -3,7 +3,7 @@
 Cet exercice est extrait de ce site https://sqlzoo.net/wiki/SELECT_names\. Ci-dessous un extrait de la table "world"
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/ad71b0fe-f9e0-464e-9fc6-c3beebd292d8" alt="Description de l'image" width="500"/>
+  <img src="https://github.com/user-attachments/assets/ad71b0fe-f9e0-464e-9fc6-c3beebd292d8" alt="Description de l'image" width="200"/>
 </div>
 
 **1.	Find the country that start with Y**\
