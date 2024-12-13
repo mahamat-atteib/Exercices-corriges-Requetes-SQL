@@ -1,4 +1,4 @@
-## **Exercice 1 : Niveau simple qui utilise les fonctions SUM et COUNT** ##
+## **Exercice 1 : requête simple qui utilise les fonctions SUM et COUNT** ##
 
 Cet exercice est extrait de ce lien : https://sqlzoo.net/wiki/SUM_and_COUNT
 
