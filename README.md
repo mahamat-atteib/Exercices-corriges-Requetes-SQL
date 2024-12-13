@@ -3,17 +3,21 @@
 ![image](https://github.com/user-attachments/assets/41d7e3bd-6b7c-4336-8c93-9fd2eaffb730)
 
 **1.	Show the total population of the world.**\
-SELECT SUM(population) FROM world
+SELECT SUM(population)\
+FROM world
 
 **2.	List all the continents - just once each.**\
-   SELECT DISTINCT continent FROM world
+SELECT DISTINCT continent\
+FROM world
 
 **3.	Give the total GDP of Africa**\
-SELECT SUM(gdp) FROM world\
+SELECT SUM(gdp)\
+FROM world\
 WHERE continent = 'Africa'
 
 **4.	How many countries have an area of at least 1000000**\
-SELECT count(name) FROM world\
+SELECT count(name)\
+FROM world\
 WHERE area > 1000000
 
 **5. What is the total population of ('Estonia', 'Latvia', 'Lithuania')**\
