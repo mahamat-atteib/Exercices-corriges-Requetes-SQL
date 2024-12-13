@@ -2,7 +2,7 @@
 
 https://github.com/user-attachments/assets/f54466de-466f-473d-acbc-d535eb7e7ee4
 
-**Les tables avec les noms de leurs colonnes :**
+**Les tables avec les noms de leurs colonnes :**\
 *** game(id, mdate, stadium, team1, team2)\
 *** goal(matchid, teamid, player, gtime)\
 *** eteam(id, teamname, coach)\
@@ -14,8 +14,9 @@ FROM game g\
 INNER JOIN goal go ON g.id = go.matchid\
 WHERE go.teamid = 'GER'
 
-**2. From the previous query you can see that Lars Bender's scored a goal in game 1012. Now we want to know what teams were playing in that match.\
-Notice in the that the column matchid in the goal table corresponds to the id column in the game table. We can look up information about game 1012 by finding that row in the game table. Show id, stadium, team1, team2 for just game 1012.**
+**2. From the previous query you can see that Lars Bender's scored a goal in game 1012. Now we want to know what teams were playing in that match.**
+
+**Notice in the that the column matchid in the goal table corresponds to the id column in the game table. We can look up information about game 1012 by finding that row in the game table. Show id, stadium, team1, team2 for just game 1012.**
 
 SELECT id, stadium, team1, team2\
 FROM game\
@@ -34,14 +35,15 @@ WHERE go.teamid = 'GER'\
 
 
 **4.	Show the team1, team2 and player for every goal scored by a player called Mario player LIKE 'Mario%'\
-Afficher l'équipe 1, l'équipe 2 et le joueur pour chaque but marqué par un joueur appelé Mario Player LIKE 'Mario%'**\
+Afficher l'équipe 1, l'équipe 2 et le joueur pour chaque but marqué par un joueur appelé Mario Player LIKE 'Mario%'**
+
 SELECT g.team1, g.team2, go.player\
 FROM game g INNER JOIN goal go ON g.id = go.matchid\
 WHERE go.player LIKE 'Mario%'
 
 
 **5.	The table eteam gives details of every national team including the coach. You can JOIN goal to eteam using the phrase goal JOIN eteam on teamid=id\
-Show player, teamid, coach, gtime for all goals scored in the first 10 minutes gtime<=10. Afficher le joueur, l'identifiant de l'équipe, l'entraîneur et le temps g pour tous les buts marqués au cours des 10 premières minutes gtime <= 10**\
+Show player, teamid, coach, gtime for all goals scored in the first 10 minutes gtime<=10. Afficher le joueur, l'identifiant de l'équipe, l'entraîneur et le temps g pour tous les buts marqués au cours des 10 premières minutes gtime <= 10**
 
 SELECT go.player, go.teamid, et.coach, go.gtime\
 FROM goal go INNER JOIN eteam et ON go.teamid = et.id\
@@ -59,7 +61,8 @@ INNER JOIN eteam et ON g.team1 = et.id\
 WHERE et.coach = 'Fernando Santos'
 
 **7. List the player for every goal scored in a game where the stadium was 'National Stadium, Warsaw'\
-Indiquez le joueur pour chaque but marqué dans un match où le stade était le « Stade National de Varsovie »**\
+Indiquez le joueur pour chaque but marqué dans un match où le stade était le « Stade National de Varsovie »**
+
 SELECT go.player\
 FROM goal go JOIN game g ON go.matchid = g.id\
 WHERE g.stadium = 'National Stadium, Warsaw'
@@ -67,7 +70,8 @@ WHERE g.stadium = 'National Stadium, Warsaw'
 
 **8. The example query shows all goals scored in the Germany-Greece quarterfinal.\
 Instead show the name of all players who scored a goal against Germany.\
-Affichez plutôt le nom de tous les joueurs qui ont marqué un but contre l'Allemagne. « teamid » vient de la table 'goal'**\
+Affichez plutôt le nom de tous les joueurs qui ont marqué un but contre l'Allemagne. « teamid » vient de la table 'goal'**
+
 **Version 1**
 
 SELECT DISTINCT go.player\
