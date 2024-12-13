@@ -7,7 +7,7 @@ Les tables avec les noms de leurs colonnes :
 *** goal(matchid, teamid, player, gtime)
 *** eteam(id, teamname, coach)
 
-**1.	Modify it to show the matchid and player name for all goals scored by Germany. To identify German players, check for : teamid = 'GER'**\
+**1.	Modify it to show the matchid and player name for all goals scored by Germany. To identify German players, check for : teamid = 'GER'**
 SELECT g.id, go.player\
 FROM game g\
 INNER JOIN goal go ON g.id = go.matchid\
@@ -67,16 +67,15 @@ WHERE g.stadium = 'National Stadium, Warsaw'
 **8. The example query shows all goals scored in the Germany-Greece quarterfinal.\
 Instead show the name of all players who scored a goal against Germany.\
 Affichez plutôt le nom de tous les joueurs qui ont marqué un but contre l'Allemagne. « teamid » vient de la table 'goal'**\
-Version 1\
+**Version 1**
 
 SELECT DISTINCT go.player\
 FROM goal go JOIN game g ON go.matchid = g.id\
 WHERE (g.team1='GER' AND go.teamid !='GER') OR\
                (g.team2='GER' AND go.teamid !='GER')\
                
-Version 2\
-Affichez plutôt le nom de tous les joueurs qui ont marqué un but contre 
-l'Allemagne.\
+**Version 2**
+**Affichez plutôt le nom de tous les joueurs qui ont marqué un but contre l'Allemagne.**\
 
 SELECT DISTINCT go.player\
 FROM goal go JOIN game g ON go.matchid = g.id\
