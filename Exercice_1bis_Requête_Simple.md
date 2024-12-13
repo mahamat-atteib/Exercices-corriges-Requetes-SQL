@@ -1,4 +1,4 @@
-### **Exercice : Requête simple avec SQL** ### 
+### **Exercice : requête simple avec SQL** ### 
 
 Cet exercice est extrait de ce site https://sqlzoo.net/wiki/SELECT_names\. Ci-dessous un extrait de la table "world"
 
