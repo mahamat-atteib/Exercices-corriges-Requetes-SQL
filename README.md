@@ -26,19 +26,19 @@ FROM world\
 WHERE name in ('Estonia', 'Latvia', 'Lithuania')
 
 **6. For each continent show the continent and number of countries.**\
-SELECT continent, count(name)\ 
+SELECT continent, count(name)\
 FROM world\
 GROUP BY continent
 
 **7.	For each continent show the continent and number of countries with populations of at least 10 million.**\
 SELECT continent, count(name)\
 FROM world\
-WHERE population >= 10000000\ 
+WHERE population >= 10000000\
 GROUP BY continent
 
 **8.	List the continents that have a total population of at least 100 million.**\
 SELECT continent FROM world\
-GROUP BY continent\ 
+GROUP BY continent\
 HAVING SUM(population) > 100000000
 
 
