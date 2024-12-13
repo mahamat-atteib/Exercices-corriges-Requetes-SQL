@@ -1,4 +1,4 @@
-## **Exercice 1 : requête simple ** ##
+### **Exercice 1 : requête simple** ###
 
 Ces requêtes simples utilisent également les fonctions SUM et COUNT.\
 Cet exercice est extrait de ce site : https://sqlzoo.net/wiki/SUM_and_COUNT.\
