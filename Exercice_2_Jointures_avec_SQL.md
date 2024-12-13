@@ -25,7 +25,7 @@ WHERE id = 1012
 
 **3. The code below shows the player (from the goal) and stadium name (from the game table) for every goal scored.
 Modify it to show the player, teamid, stadium and mdate for every German goal.**\
-**Modifiez-le pour afficher le joueur, l'identifiant de l'équipe, le stade et la date de chaque but allemand.**\
+**Modifiez-le pour afficher le joueur, l'identifiant de l'équipe, le stade et la date de chaque but allemand.**
 
 SELECT go.player, et.id, g.stadium, g.mdate\
 FROM game g\
@@ -47,13 +47,13 @@ Show player, teamid, coach, gtime for all goals scored in the first 10 minutes g
 
 SELECT go.player, go.teamid, et.coach, go.gtime\
 FROM goal go INNER JOIN eteam et ON go.teamid = et.id\
-WHERE go.gtime<=10\
+WHERE go.gtime<=10
 
 
 **6. To JOIN game with eteam you could use either game JOIN eteam ON (team1=eteam.id) or game JOIN eteam ON (team2=eteam.id)\
 Notice that because id is a column name in both game and eteam you must specify eteam.id instead of just id
 List the dates of the matches and the name of the team in which 'Fernando Santos' was the team1 coach\
-Indiquez les dates des matchs et le nom de l'équipe dans laquelle « Fernando Santos » était l'entraîneur de l'équipe 1.**\
+Indiquez les dates des matchs et le nom de l'équipe dans laquelle « Fernando Santos » était l'entraîneur de l'équipe 1.**
 
 SELECT DISTINCT g.mdate, et.teamname\
 FROM game g INNER JOIN goal go ON g.id = go.matchid\
