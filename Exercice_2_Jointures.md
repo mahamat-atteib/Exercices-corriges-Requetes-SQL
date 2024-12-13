@@ -2,9 +2,8 @@
 
 Cet exercice est extrait de ce site https://sqlzoo.net/wiki/SELECT_names\. Ci-dessous un extrait de la table "world"\
 
-<p align="center">
-"![image](https://github.com/user-attachments/assets/72962dc3-d960-440c-892b-12b834aa7edc)"
-</p>
+![image](https://github.com/user-attachments/assets/ad71b0fe-f9e0-464e-9fc6-c3beebd292d8)
+
 
 \
 **1.	Find the country that start with Y**\
