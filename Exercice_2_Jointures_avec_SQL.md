@@ -96,30 +96,33 @@ GROUP BY et.id\
 ORDER BY teamname
 
 **10. Show the stadium and the number of goals scored in each stadium.\
-Affichez le stade et le nombre de buts marqués dans chaque stade.**\
+Affichez le stade et le nombre de buts marqués dans chaque stade.**
+
 SELECT DISTINCT g.stadium, COUNT(go.teamid)\
 FROM game g\
 JOIN goal go ON g.id = go.matchid\
 GROUP BY g.stadium
 
 **11. For every match involving 'POL', show the matchid, date and the number of goals scored.
-Pour chaque match impliquant « POL », indiquez l'identifiant du match, la date et le nombre de buts marqués**\
+Pour chaque match impliquant « POL », indiquez l'identifiant du match, la date et le nombre de buts marqués**
+
 SELECT go.matchid, g.mdate, count(go.teamid)\
 FROM game g\
-JOIN goal go ON g.id = go.matchid\ 
+JOIN goal go ON g.id = go.matchid\
 WHERE (g.team1 = 'POL' OR g.team2 = 'POL')\
 GROUP BY go.matchid
 
 
 **12. For every match where 'GER' scored, show matchid, match date and the number of goals scored by 'GER'\
-Pour chaque match où « GER » a marqué, affichez l'identifiant du match, la date du match et le nombre de buts marqués par « GER »**\
+Pour chaque match où « GER » a marqué, affichez l'identifiant du match, la date du match et le nombre de buts marqués par « GER »**
+
 SELECT go.matchid, g.mdate, COUNT(go.teamid)\
 FROM goal go\
 JOIN game g ON go.matchid = g.id\
 WHERE go.teamid = 'GER'\
 GROUP BY go.matchid
 
-version\
+**version**
 
 SELECT g.mdate, g.team1, SUM(CASE WHEN g.team1 = go.teamid THEN 1 ELSE 0 END) AS score1, g.team2,\
   SUM(CASE WHEN g.team2 = go.teamid THEN 1 ELSE 0 END) AS score2\
