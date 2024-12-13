@@ -3,7 +3,7 @@
 Cet exercice est extrait de ce site https://sqlzoo.net/wiki/SELECT_names\. Ci-dessous un extrait de la table "world"\
 
 <p align="center">
-  <img width="460" height="300" src="![image](https://github.com/user-attachments/assets/72962dc3-d960-440c-892b-12b834aa7edc)">
+![image](https://github.com/user-attachments/assets/72962dc3-d960-440c-892b-12b834aa7edc)
 </p>
 
 \
