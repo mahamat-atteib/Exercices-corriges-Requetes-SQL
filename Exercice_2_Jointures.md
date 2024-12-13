@@ -1,7 +1,10 @@
-###Exercice : Requête simple avec SQL### 
+###**Exercice : Requête simple avec SQL**### 
 
-https://sqlzoo.net/wiki/SELECT_names
+Cet exercice est extrait de ce site https://sqlzoo.net/wiki/SELECT_names\. Ci-dessous un extrait de la table "world"\
 
+![image](https://github.com/user-attachments/assets/72962dc3-d960-440c-892b-12b834aa7edc)
+
+\
 **1.	Find the country that start with Y**\
 SELECT name\
 FROM world\
@@ -63,12 +66,12 @@ SELECT name\
 FROM world\
 WHERE capital = CONCAT(name, ' City')
 
-**13.	Find the capital and the name where the capital includes the name of the country.**
+**13.	Find the capital and the name where the capital includes the name of the country.**\
 SELECT capital, name\ 
 FROM world
 WHERE capital LIKE CONCAT('%', name, '%')
 
-**14.	Find the capital and the name where the capital is an extension of name of the country.**
+**14.	Find the capital and the name where the capital is an extension of name of the country.**\
 SELECT capital, name\
 FROM world\
 WHERE capital LIKE CONCAT(name, '%') AND LENGTH(capital) > LENGTH(name)
