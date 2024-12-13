@@ -1,5 +1,6 @@
 ## **Exercice 1 : Niveau basique** ##
 
+Cet exercice est extrait de ce lien : **https://sqlzoo.net/wiki/SUM_and_COUNT**
 Ci-dessous la table "world"
 ![image](https://github.com/user-attachments/assets/41d7e3bd-6b7c-4336-8c93-9fd2eaffb730)
 
