@@ -2,10 +2,10 @@
 
 https://github.com/user-attachments/assets/f54466de-466f-473d-acbc-d535eb7e7ee4
 
-Les tables avec les noms de leurs colonnes : 
-*** game(id, mdate, stadium, team1, team2)
-*** goal(matchid, teamid, player, gtime)
-*** eteam(id, teamname, coach)
+**Les tables avec les noms de leurs colonnes :**
+*** game(id, mdate, stadium, team1, team2)\
+*** goal(matchid, teamid, player, gtime)\
+*** eteam(id, teamname, coach)\
 
 **1.	Modify it to show the matchid and player name for all goals scored by Germany. To identify German players, check for : teamid = 'GER'**
 
