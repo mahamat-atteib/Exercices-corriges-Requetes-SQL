@@ -1,6 +1,9 @@
 ### **Exercice : Jointure avec SQL** ###
 
-https://github.com/user-attachments/assets/f54466de-466f-473d-acbc-d535eb7e7ee4
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/f54466de-466f-473d-acbc-d535eb7e7ee4" alt="Description de l'image" width="200"/>
+</div>
+
 
 **Les tables avec les noms de leurs colonnes :**\
 *** game(id, mdate, stadium, team1, team2)\
