@@ -9,7 +9,7 @@ Cet exercice est extrait de ce site : https://sqlzoo.net/wiki/The_JOIN_operation
 **Les 3 tables avec les noms de leurs colonnes :**
 > game : id, mdate, stadium, team1, team2\
 > goal : matchid, teamid, player, gtime\
-> eteam : id, teamname, coach\
+> eteam : id, teamname, coach
 
 **1.	Modify it to show the matchid and player name for all goals scored by Germany. To identify German players, check for : teamid = 'GER'**
 
@@ -35,7 +35,7 @@ SELECT go.player, et.id, g.stadium, g.mdate\
 FROM game g\
 JOIN goal go ON g.id = go.matchid\
 JOIN eteam et ON go.teamid = et.id\
-WHERE go.teamid = 'GER'\
+WHERE go.teamid = 'GER'
 
 
 **4.	Show the team1, team2 and player for every goal scored by a player called Mario player LIKE 'Mario%'\
@@ -91,7 +91,7 @@ FROM goal go JOIN game g ON go.matchid = g.id\
 WHERE (g.team1='GER' OR g.team2='GER') AND go.teamid != 'GER'
 
 **9.  Show teamname and the total number of goals scored.\
-Afficher le nom de l'équipe et le nombre total de buts marqués**\
+Afficher le nom de l'équipe et le nombre total de buts marqués**
 
 SELECT et.teamname, COUNT(go.teamid)\
 FROM eteam et\
