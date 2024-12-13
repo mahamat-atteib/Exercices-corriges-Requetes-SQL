@@ -1,6 +1,8 @@
-## **Exercice 1 : requête simple qui utilise les fonctions SUM et COUNT** ##
+## **Exercice 1 : requête simple ** ##
 
-Cet exercice est extrait de ce lien : https://sqlzoo.net/wiki/SUM_and_COUNT. Ci-dessous la table "world"
+Ces requêtes simples utilisent également les fonctions SUM et COUNT.\
+Cet exercice est extrait de ce site : https://sqlzoo.net/wiki/SUM_and_COUNT.\
+Ci-dessous un aperçu de la table "world"
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/41d7e3bd-6b7c-4336-8c93-9fd2eaffb730" alt="Description de l'image" width="400"/>
